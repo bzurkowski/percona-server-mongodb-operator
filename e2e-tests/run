@@ -11,6 +11,7 @@ fail() {
     exit 1
 }
 
+"$dir/default-cr/run" || fail "default-cr"
 "$dir/upgrade/run" || fail "upgrade"
 "$dir/upgrade-sharded/run" || fail "upgrade-sharded"
 "$dir/upgrade-consistency/run" || fail "upgrade-consistency"
